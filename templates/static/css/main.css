@@ -1,0 +1,104 @@
+.navimg {
+    width: 140px;
+    height: 60px;
+    float: left;
+  }
+  .navlink {
+    color: white;
+    padding: 20px;
+  }
+  .navbar {
+    padding: 10px;
+    background-color: #8cd3ff;
+  }
+  .nav1 {
+    background-color: #74b72e;
+    padding: 8px;
+  }
+  .nav2 {
+    background-color: #74b72e;
+    padding: 8px;
+  }
+  .nav3 {
+    background-color: #74b72e;
+    padding: 8px;
+  }
+  .welcome {
+    background-image: url(https://ttc.com/wp-content/uploads/2020/01/calm-body-of-water-2168366-1.jpg);
+    background-attachment: fixed;
+    height: 460px;
+  }
+  .welcome2 {
+    background-color: #8cd3ff;
+    padding: 25px;
+    width: 250px;
+  }
+  .welcomelink {
+    background-color: #74b72e;
+    padding: 8px;
+  }
+  a:link {
+    color: white;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  .about {
+    padding: 25px;
+    background-color: white;
+  }
+  .welcome3 {
+    font-family: Impact, charcoal, sans-serif;
+  }
+  .abouttext {
+    border: 3px solid #0dA2ff;
+    padding: 15px;
+  }
+  .aboutname {
+    font-family: Impact, charcoal, sans-serif;
+  }
+  .footer {
+    padding: 10px;
+    background-color: #949494;
+  }
+  .service {
+    padding: 25px;
+    background-color: white;
+  }
+  .servicename {
+    font-family: Impact, charcoal, sans-serif; 
+  }
+  .servicetext {
+    padding: 15px;
+    border: 3px solid #0dA2ff;
+  }
+  .contact {
+    background-color: white;
+    padding: 25px;
+  }
+  .contacttext {
+    padding: 25px;
+    background-color: #8cd3ff;
+    border: 4px dashed black
+  }
+  .up {
+    background-color: #8cd3ff;
+  }
+  .del {
+    background-color: #74b72e
+  }
+  .nav4 {
+    background-color: #74b72e;
+    padding: 8px;
+  }
+  .sub {
+    padding: 35px;
+    color: #8cd3ff;
+  }
+  .navspace {
+    background-color: #8cd3ff;
+    padding: 5px;
+    color: #8cd3ff
+  }

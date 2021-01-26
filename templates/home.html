@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<!--Welcome sign and background-->
+<div align="center" class="welcome">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <div class="welcome2">
+    <h1 align="center" class="welcome3">Welcome To Wish List Travel</h1>
+    <h5 align="center">Press the button below to get started!</h5>
+    <a align="center" class="welcomelink" href="{{ url_for('wishlist') }}">Get Started</a>
+  </div>
+</div>
+<!--About us section-->
+<div class="about">
+  <h2 align="center" class="aboutname">About Us</h2>
+  <p class="abouttext">Too many times, we say we will take that trip and make those memories “someday.” Our question for you is, why wait? Start dreaming now of the vacations you want to take, and we at Wish List Travel will help turn your travel wishes into memories.<br>
+<br/>
+Whether you want to take a photography safari in Africa, a cruise in the Bahamas, or a river tour in Europe, we can help make that a reality. No travel dream is out of reach! Wish List Travel is an all-inclusive travel agency that can book any form of transportation, accommodations, tours, and attractions across the globe. What’s more, we are big believers in education. Our agents have certifications from many of our vendors, including our owner being a Certified Cruise Counsellor. We use that knowledge to help make your perfect travel fantasies come true. Don’t stop at just hoping.<br>
+<br/>
+Register with us and we can start looking for the best deals and packages in the locales of your dreams. No dream vacation is out of reach. Let us make your travel wishes a reality! </p>
+</div>
+<!--Services section-->
+<div class="service">
+  <h2 align="center" class="servicename">Services</h2>
+  <p class="servicetext">We want you to close your eyes and think of all the places you’ve ever wanted to visit. Don’t limit yourself.<br>
+<br/>
+Now, start writing down all of those places. What’s on that list? Antarctica? Zimbabwe? Are you tired and want to visit somewhere that takes care of everything from the food to the entertainment? Perhaps you always wanted to visit Paris and taste beignets. Or feel the sand between your toes on every island in the Bahamas. Do you love history? You can float down the Nile River and see ancient ruins. We have the perfect idea for animal lovers—a photo safari in Africa where you can see the animals and capture pictures of them to cherish those memories forever. Or maybe your daughter has always dreamed of being married in an exotic location at sunset.<br>
+<br/>
+As an all-inclusive travel agency, our travel agents can book any tour, form of transportation, accommodations, or attraction you have your heart set on. We can even introduce you to vacation ideas you’ve not yet considered. We know many people consider travel an unaffordable luxury and yes, exotic trips cost more than a weekend staycation. But when you create a travel wish list with us, we keep an eye out for that perfect deal, that perfect package that will make your travel goals even more reachable.</p>
+</div>
+<!--Contact section and easy form-->
+<div align="center" class="contact">
+  <h2 class="contactname"></h2>
+  <form class="contacttext" method="POST">
+    <p>Name</p>
+    <input type="text" name="name">
+    <p>Email</p>
+    <input type="text" name="email">
+    <p>Comments</p>
+    <textarea name="comment"></textarea>
+    <br/>
+    <br/>
+    <input type="submit" name="submit" value="Contact Us">
+  </form>
+</div>
+{% endblock %}

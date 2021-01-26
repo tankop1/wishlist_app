@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<!--Wishlist forum-->
+<div class="forum">
+  <table>
+    <colgroup>
+      <col style="width: 100px">
+      <col style="width: 300px">
+      <col style="width: 20px">
+    </colgroup>
+    <tbody>
+      {% if template_form.name.data %}
+      {% for index in range(wishlist_locations | length) %}
+      <tr>
+        <td>{{ wishlist_locations[index]}}</td>
+        <td>{{ wishlist_descriptions[index] }}</td>
+        <td>
+          <input type="submit" name="move" class="up" value="↗">
+          <input type="submit" name="delete" class="del" value="X">
+        </td>
+      </tr>
+      {% endfor %}
+      {% else %}
+      <h3 class="sub">Your wishlist will go here</h3>
+      {% endif %}
+    </tbody>
+  </table>
+</div>
+<!--Flask form to add location to wishlist forum-->
+<div class="form">
+  <form action="{{ url_for('wishlist') }}" method="POST">
+    <p>{{ template_form.name.label }}
+    {{ template_form.name() }}</p>
+    <p>{{ template_form.description.label }}
+    {{ template_form.description() }}</p>
+    <tr>{% for btn in template_form.category %}
+      <td>{{ btn }}</td>
+      <td>{{ btn.label }}</td>
+    {% endfor %}</tr>
+    <p>{{ template_form.submit() }}</p>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<!--Visited locations forum-->
+<div class="visit_forum">
+  <table>
+    <colgroup>
+      <col style="width: 100px">
+      <col style="width: 300px">
+      <col style="width: 20px">
+    </colgroup>
+    <tbody>
+      {% if template_form_2.name.data %}
+      {% for index in range(wishlist_locations|length) %}
+      <tr>
+        <td>{{ visited_locations[index] }}</td>
+        <td>{{ visited_descriptions[index] }}</td>
+        <td>
+          <input type="submit" name="move" value="↗">
+          <input type="submit" name="delete" value="X">
+        </td>
+      </tr>
+      {% endfor %}
+      {% else %}
+      <h3 class="sub">Your visited list will go here</h3>
+    {% endif %}
+    </tbody>
+  </table>
+</div>
+<!--Flask form to add location to visited forum-->
+<div class="form">
+  <form action="{{ url_for('visited') }}" method="POST">
+    <p>{{ template_form_2.name.label }}
+    {{ template_form_2.name() }}</p>
+    <p>{{ template_form_2.description.label }}
+    {{ template_form_2.description() }}</p>
+    <tr>{% for btn in template_form_2.category %}
+      <td>{{ btn }}</td>
+      <td>{{ btn.label }}</td>
+    {% endfor %}</tr>
+    <p>{{ template_form_2.submit() }}</p>
+  </form>
+</div>
+{% endblock %}
